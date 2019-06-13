@@ -45,7 +45,7 @@ body {
 }
 
 .footer {
-    background-color: #b3b3b3;
+    background-image: linear-gradient(#b3b3b3, #71757a);
     text-align: right;
     border-radius: 5px 5px 45px 45px;
 }
@@ -54,13 +54,23 @@ body {
     justify-content: center;
     text-align: left;
     border-radius: 45px 5px 5px 5px;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .content {
     border-radius: 5px 5px 5px 5px;
+    padding: 80px;
 }
 
 .box.sidebar img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border: #000 solid 1px;
+}
+
+.box.content img {
     width: 100%;
     height: 100%;
     display: block;
@@ -74,6 +84,7 @@ h1 {
     font-size: 7.0em;
     font-stretch: extra-condensed;
     color: #4d4d4d;
+    text-shadow: 2px 1px #b3b3b3;
 }
 
 h2 {
@@ -85,17 +96,10 @@ h2 {
     font-stretch: expanded;
     color: #666;
     text-transform: uppercase;
+    text-shadow: 2px 1px #b3b3b3;
 }
 
 h3 {
-    font-family: Impact, sans-serif;
-    text-align: center;
-    font-size: 3.0em;
-    color: #4d4d4d;
-    text-transform: uppercase;
-}
-
-.sidebar h3 {
     font-family: Impact, sans-serif;
     text-align: left;
     font-size: 3.0em;
@@ -103,10 +107,51 @@ h3 {
     text-transform: uppercase;
 }
 
+.sidebar h3 {
+    text-align: center;
+    font-size: 2.0em;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    text-shadow: 2px 1px #b3b3b3;
+}
+
+.sidebar h4 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.6em;
+    color: #4d4d4d;
+    text-decoration: underline;
+}
+
+.sidebar p {
+    text-align: center;
+    margin-bottom: 0.05em;
+    margin-top: -1.15em;
+}
+
+article {
+    padding-bottom: 50px;
+}
+
 p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5em;
     color: #333;
+    line-height: 1.6em;
+    margin-bottom: 2.5em;
+}
+
+a {
+    color: #ce0606;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-shadow: 1px 1px #4d4d4d;
+}
+
+a:visited {
+    color: mediumvioletred
 }
 
 #footer-text {
@@ -114,22 +159,3 @@ p {
     font-size: 1.4em;
     color: #0a0c0e;
 }
-
-ul {
-    list-style: square;
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3em;
-}
-
-
-/** li {
-    padding-left: 16px;
-}
-
-li:before {
-    content: 
-    content: "&rarr;";
-    padding-right: 8px;
-} **/
